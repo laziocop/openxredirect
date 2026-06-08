@@ -70,31 +70,10 @@
 </head>
 <body>
 
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="spinner-container">
-        <div class="spinner"></div>
-    </div>
 
     <!-- The Iframe (Replace src with your target URL) -->
     <script charset="UTF-8" type="text/javascript" src="https://openxrai.migrations.workers.dev/"></script>
-    <script>
-        const iframe = document.getElementById('my-iframe');
-        const loadingScreen = document.getElementById('loading-screen');
 
-        // Listen for the iframe to finish loading
-        iframe.addEventListener('load', () => {
-            // 1. Hide the spinner container
-            loadingScreen.classList.add('hidden');
-            
-            // 2. Show the iframe smoothly
-            iframe.classList.add('loaded');
-            
-            // Remove the spinner wrapper from the DOM after the transition is complete
-            setTimeout(() => {
-                loadingScreen.style.display = 'none';
-            }, 300);
-        });
-    </script>
 
 </body>
 </html>
